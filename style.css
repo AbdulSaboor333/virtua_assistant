@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#logo{
+    width: 25vw;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: "Protest Guerrilla", sans-serif;
+      
+}
+
+h2{
+    color: whitesmoke;
+    font-family: "Protest Guerrilla", sans-serif;
+      
+}
+
+#name{
+    color: rgba(212, 43, 122);
+    font-size: 40px;
+}
+
+#vs{
+    color: rgba(43, 206, 212);
+    font-size: 40px;
+}
+
+#voice{
+    width: 350px;
+    display: none;
+}
+
+#btn{
+    width: 40%;
+    background: linear-gradient(to right,rgb(70, 34, 228), rgb(196, 36, 97));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(70, 34, 228), 2px 2px 10px rgb(196, 36, 97);
+    border: none;
+    transition: all 0.5s;
+    cursor: grab;
+}
+
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(70, 34, 228), 2px 2px 20px rgb(196, 36, 97);
+    letter-spacing: 2px;
+}
+
+/* Responsive Code */
+
+/* For large tablets and smaller desktops (width <= 1024px) */
+@media (max-width: 1024px) {
+    #logo {
+        width: 30vw;
+    }
+    #name, #vs, h1, h2 {
+        font-size: 35px;
+    }
+    #btn {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
+/* For medium tablets (width <= 768px) */
+@media (max-width: 768px) {
+    #logo {
+        width: 35vw;
+    }
+    #name, #vs, h1, h2 {
+        font-size: 30px;
+    }
+    #btn {
+        width: 60%;
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* For small tablets and large smartphones (width <= 576px) */
+@media (max-width: 576px) {
+    #logo {
+        width: 40vw;
+    }
+    #name, #vs, h1, h2  {
+        font-size: 25px;
+    }
+    #btn {
+        width: 70%;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/* For small smartphones (width <= 360px) */
+@media (max-width: 360px) {
+    #logo {
+        width: 45vw;
+    }
+    #name, #vs, h1, h2  {
+        font-size: 20px;
+    }
+    #btn {
+        width: 80%;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
